@@ -1,0 +1,14 @@
+INPUT | OUTPUT
+192.168.1.1 | Extracted IPv4 address: 192.168.1.1 (decimal value: 3232235777, port: none)
+0.0.0.0 | 0.0.0.0 (decimal value: 0, port: none)
+255.255.255.255 | 255.255.255.255 (decimal value: 0, port: none)
+192.168.1.1:8080 | Extracted IPv4 address: 192.168.1.1 (decimal value: 3232235777, port: 8080.)
+...192.168.1.10... | Extracted IPv4 address: 192.168.1.10 (decimal value: 3232235786, port: none)
+no ipv4 here | No valid IPv4 address found.
+1.2.3.4:65536 | No valid IPv4 address found.
+bad 999.1.1.1 then good 8.8.8.8:53 | 8.8.8.8 (decimal value: 134744072, port: 53)
+host(1.2.3.4:443), | 1.2.3.4 (decimal value: 16909060, port: 443)
+Theipv4adressis::192.168.1.10. | Extracted IPv4 address: 192.168.1.10 (decimal value: 3232235786, port: none)
+:::::192.168.1.1::::: | 192.168.1.1 (decimal value: 3232235777, port: none)
+2.168.1...1 | No valid IPv4 address found.
+END | Program terminated
